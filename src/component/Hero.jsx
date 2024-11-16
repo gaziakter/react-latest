@@ -1,17 +1,16 @@
 
 const Hero = () => {
 
-    let mark = 83;
+    const city = ['Dhaka', 'Cumilla','Khulna']
     return (
         <div>
-            {mark>=80?<h1>Brilliant Result</h1>:<h1>You are faild</h1>}
-            <button onClick={()=>alert("Hello")}>Submit</button>
-
-            {(()=>{
-                if(mark>80 && mark<90){
-                    return "Your result is A+"
+            <ul>
+                {
+                    city.map((item, i)=>{
+                        return <li key={i.toString()}>{item}</li>
+                    })
                 }
-            })()}
+            </ul>
         </div>
     );
 };
