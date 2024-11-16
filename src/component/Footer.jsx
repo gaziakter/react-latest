@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <div>
-            
+            <h1>This is footer area</h1>
         </div>
     );
 };
