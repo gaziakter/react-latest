@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div>
       <Header/>
-      <Hero click={handleClick}/>
+      <Hero/>
       <Footer/>
     </div>
   );
