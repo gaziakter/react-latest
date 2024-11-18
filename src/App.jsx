@@ -1,18 +1,16 @@
-import Footer from "./component/Footer";
-import Header from "./component/Header";
-import Hero from "./component/Hero";
+import { useRef } from "react";
+
 
 const App = () => {
 
-  const handleClick = () =>{
-    alert('Hello Bangladesh');
-  }
+  let myHeadline = useRef();
+
+  myHeadline.current.innerText = "Hello World";
+
 
   return (
     <div>
-      <Header/>
-      <Hero/>
-      <Footer/>
+      <h1 ref={myHeadline}></h1>
     </div>
   );
 };
