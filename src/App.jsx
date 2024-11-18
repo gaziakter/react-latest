@@ -4,15 +4,14 @@ import Hero from "./component/Hero";
 
 const App = () => {
 
-  const ItemObj = {
-    name: 'Gazi Akter',
-    age: 37,
-    city: 'Cumilla'
+  const handleClick = () =>{
+    alert('Hello Bangladesh');
   }
+
   return (
     <div>
       <Header/>
-      <Hero item={ItemObj}/>
+      <Hero click={handleClick}/>
       <Footer/>
     </div>
   );
