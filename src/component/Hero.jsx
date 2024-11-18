@@ -1,15 +1,13 @@
 
-const Hero = () => {
+const Hero = (props) => {
 
-    const city = ['Dhaka', 'Cumilla','Khulna']
+ 
     return (
         <div>
             <ul>
-                {
-                    city.map((item, i)=>{
-                        return <li key={i.toString()}>{item}</li>
-                    })
-                }
+                <li>Name:{props.item['name']}</li>
+                <li>Age:{props.item['age']}</li>
+                <li>City:{props.item['city']}</li>
             </ul>
         </div>
     );
