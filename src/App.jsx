@@ -10,6 +10,7 @@ const change = ()=> {
   let fName = firstName.current.value;
   let lName = lastName.current.value;
 
+  
   alert(fName+' '+lName);
 }
 
