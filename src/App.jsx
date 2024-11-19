@@ -3,14 +3,23 @@ import { useRef } from "react";
 
 const App = () => {
 
-  let myHeadline = useRef();
+  let firstName = useRef();
+  let lastName = useRef();
 
-  myHeadline.current.innerHTML = "<ul><li>Dhaka</li><li>Cumila</li></ul>";
+const change = ()=> {
+  let fName = firstName.current.value;
+  let lName = lastName.current.value;
+
+  alert(fName+' '+lName);
+}
 
 
   return (
     <div>
-      <h1 ref={myHeadline}></h1>
+     <input ref={firstName} type="text" placeholder="First Name" />
+     <input ref={lastName} type="text" placeholder="Last Name" />
+
+     <button onClick={change}>Submit</button>
     </div>
   );
 };
