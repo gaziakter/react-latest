@@ -3,17 +3,16 @@ import { useRef } from "react";
 
 const App = () => {
 
-  let myHeadline = useRef();
+  let number = useRef(0);
 
 const change = ()=> {
-  myHeadline.current.classList.remove('text-success');
-  myHeadline.current.classList.add('text-danger');
+  number.current++;
+  console.log(number.current);
 }
 
 
   return (
     <div>
-        <h1 ref={myHeadline} className="text-success">Hello Bangladesh!</h1>
 
      <button onClick={change}>Submit</button>
     </div>
